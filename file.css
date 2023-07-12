@@ -1,0 +1,18 @@
+.bg-color-purple200{
+    background-color: #c29ffa;
+}
+.bg-color-purple400{
+    background-color: #8540f5;
+}
+.bg-color-purple300{
+    background-color: #a370f7;
+}
+.text-justify{
+    text-align: justify;
+}
+.img-height{
+    height: -webkit-fill-available;
+}
+.fw-400{
+    font-weight: 500;
+}
