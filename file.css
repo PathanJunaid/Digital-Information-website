@@ -1,18 +1,22 @@
-.bg-color-purple200{
-    background-color: #ab8d75;
-}
-.bg-color-purple400{
-    background-color: #8540f5;
-}
-.bg-color-purple300{
-    background-color: #a370f7;
-}
 .text-justify{
     text-align: justify;
 }
-.img-height{
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
+.img-digital{
+    max-height: 30em;
+    width: 100%;
+    box-shadow: -30px 30px 2px #6c757d;
+}
+.img-benefit{
+    width: 100%;
+    min-height: 29rem !important;
+    max-height: 30rem !important;
+    box-shadow: 30px -30px 2px #6c757d;
+}
+.img-marketing{
+    min-height: 29rem !important;
+    max-height: 30rem !important;
+    width: 100%;
+    box-shadow: -30px 30px 2px #6c757d;
 }
 .fw-400{
     font-weight: 500;
@@ -20,19 +24,30 @@
 .w-95{
     width: 95%;
 }
-.bg-color-cyan400{
-    background-color: #6edff6;
-}
-.bg-color-green200{
-    background-color: #f7ffff;
-}
-.bg-color-blue200{
+.bg-color-contact{
     background-color: #0c283d;
 }
 .rounded-1rem{
     border-radius: 1rem;
 }
+.rounded-3rem{
+    border-radius: 3rem;
+}
 #difm_link:hover{
     background-color: #0c283d !important;
     color: #fff !important;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 48
+}
+.position{
+    bottom: 5rem;
+    right: 3rem;
+}
+.font-roboto{
+    font-family: 'roboto' , sans-serif;
 }
