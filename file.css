@@ -4,19 +4,22 @@
 .img-digital{
     max-height: 30em;
     width: 100%;
-    box-shadow: -30px 30px 2px #6c757d;
+    box-shadow: -15px 15px #6c757d;
 }
 .img-benefit{
     width: 100%;
     min-height: 29rem !important;
     max-height: 30rem !important;
-    box-shadow: 30px -30px 2px #6c757d;
+    box-shadow: 15px -15px #6c757d;
 }
 .img-marketing{
     min-height: 29rem !important;
     max-height: 30rem !important;
     width: 100%;
-    box-shadow: -30px 30px 2px #6c757d;
+    box-shadow: -15px 15px #6c757d;
+}
+.fw-600{
+    font-weight: 600;
 }
 .fw-400{
     font-weight: 500;
@@ -34,7 +37,7 @@
     border-radius: 3rem;
 }
 #difm_link:hover{
-    background-color: #0c283d !important;
+    background-color: black !important;
     color: #fff !important;
 }
 .material-symbols-outlined {
@@ -50,4 +53,7 @@
 }
 .font-roboto{
     font-family: 'roboto' , sans-serif;
+}
+.ul_unorder{
+    list-style-type: square;
 }
