@@ -1,5 +1,5 @@
 .bg-color-purple200{
-    background-color: #c29ffa;
+    background-color: #ab8d75;
 }
 .bg-color-purple400{
     background-color: #8540f5;
@@ -12,7 +12,27 @@
 }
 .img-height{
     height: -webkit-fill-available;
+    width: -webkit-fill-available;
 }
 .fw-400{
     font-weight: 500;
+}
+.w-95{
+    width: 95%;
+}
+.bg-color-cyan400{
+    background-color: #6edff6;
+}
+.bg-color-green200{
+    background-color: #f7ffff;
+}
+.bg-color-blue200{
+    background-color: #0c283d;
+}
+.rounded-1rem{
+    border-radius: 1rem;
+}
+#difm_link:hover{
+    background-color: #0c283d !important;
+    color: #fff !important;
 }
