@@ -71,3 +71,10 @@
 #line-height{
     line-height: 3.2rem;
 }
+.top_link{
+    width: 60px;
+    height: 60px;
+}
+.bg-color-shadow{
+    background-color: #6c757d;
+}
