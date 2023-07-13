@@ -8,13 +8,13 @@
 }
 .img-benefit{
     width: 100%;
-    min-height: 29rem !important;
-    max-height: 30rem !important;
+    min-height: 23rem !important;
+    /* max-height: 30rem !important; */
     box-shadow: 15px -15px #6c757d;
 }
 .img-marketing{
-    min-height: 29rem !important;
-    max-height: 30rem !important;
+    min-height: 23rem !important;
+    /* max-height: 30rem !important; */
     width: 100%;
     box-shadow: -15px 15px #6c757d;
 }
@@ -28,6 +28,9 @@
     width: 95%;
 }
 .bg-color-contact{
+    background-color: #292d33;
+}
+.bg-color-arrow{
     background-color: #0c283d;
 }
 .rounded-1rem{
@@ -37,8 +40,8 @@
     border-radius: 3rem;
 }
 #difm_link:hover{
-    background-color: black !important;
-    color: #fff !important;
+    background-color: white !important;
+    color: black !important;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -55,5 +58,8 @@
     font-family: 'roboto' , sans-serif;
 }
 .ul_unorder{
-    list-style-type: square;
+    list-style-type: symbols(U+2192);
+}
+.footer-color{
+    background-color: #333333;
 }
