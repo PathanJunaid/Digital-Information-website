@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
       sections.forEach(function(section) {
         const sectionTop = section.offsetTop-100; // Adjust the offset value as needed
         const sectionHeight = section.offsetHeight;
-        console.log(sectionHeight)
         const sectionId = section.getAttribute('id');
   
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
