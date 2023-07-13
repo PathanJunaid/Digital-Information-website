@@ -1,35 +1,64 @@
+let scroll_y ;
 window.addEventListener("scroll", function (event) {
  
-    let scroll_y = this.scrollY;
-    let scroll_x = this.scrollX;
-    console.log(scroll_x, scroll_y);
-    if(scroll_y>=400&&scroll_y<1050){
-        let a = document.querySelector("[href = '#Benefit']");
-        a.classList.add('Benefitlnk')
-        a.classList.add('color-green')
+    scroll_y = this.scrollY;
+    // Fixed Button to go on top 
+
+    if(scroll_y>0){
+        try{
+            document.querySelector('.invisible').classList.add('visible');
+            document.querySelector('.visible').classList.remove('invisible')   
+        }catch(val){
+            
+        }
     }
     else{
-        let a = document.querySelector("[href = '#Benefit']");
-        a.classList.remove('Benefitlnk')
-        a.classList.remove('color-green')
+        document.querySelector('.visible').classList.add('invisible');
+        document.querySelector('.invisible').classList.remove('visible')   
     }
-    if(scroll_y>=1050&&scroll_y<1400){
-        let a = document.querySelector("[href = '#Marketing']");
-        a.classList.add('Benefitlnk')
-        a.classList.add('color-blue')
-    }else{
-        let a = document.querySelector("[href = '#Marketing']");
-        a.classList.remove('Benefitlnk')
-        a.classList.remove('color-blue')
-    }
-    if(scroll_y>=1400){
-        let a = document.querySelector("[href = '#Contact']");
-        a.classList.add('Benefitlnk')
-        a.classList.add('bg-color-contact')
-    }else if(scroll_y<=1400){
-        let a = document.querySelector("[href = '#Contact']");
-        a.classList.remove('Benefitlnk')
-        a.classList.remove('bg-color-contact')
-    }
-
 })
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    function activateLink(link) {
+      navLinks.forEach(function(navLink) {
+        navLink.classList.remove('Benefitlnk');
+      });
+      link.classList.add('Benefitlnk');
+    }
+  
+    function checkSectionInView() {
+      const scrollPosition = window.pageYOffset;
+  
+      sections.forEach(function(section) {
+        const sectionTop = section.offsetTop-100; // Adjust the offset value as needed
+        const sectionHeight = section.offsetHeight;
+        console.log(sectionHeight)
+        const sectionId = section.getAttribute('id');
+  
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          navLinks.forEach(function(navLink) {
+            if (navLink.getAttribute('href') === `#${sectionId}`) {
+              activateLink(navLink);
+            }
+          });
+        }
+      });
+    }
+  
+    // Add scroll event listener to the window
+    window.addEventListener('scroll', checkSectionInView);
+  });
+  async function navbar_closed(){
+    let p = new Promise((resolve,reject)=>{
+        var button = document.querySelector('.button-1')
+        button.classList.add('collapsed');
+        button.setAttribute("aria-expanded","false")
+        var div = document.querySelector('.its')
+        div.classList.remove('show');
+    });
+    let val= await p;
+    console.log(val);
+}
+
