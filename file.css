@@ -8,13 +8,11 @@
 }
 .img-benefit{
     width: 100%;
-    min-height: 23rem !important;
-    /* max-height: 30rem !important; */
+    min-height : 23rem !important;
     box-shadow: 15px -15px #6c757d;
 }
 .img-marketing{
-    min-height: 23rem !important;
-    /* max-height: 30rem !important; */
+    min-height : 23rem !important;
     width: 100%;
     box-shadow: -15px 15px #6c757d;
 }
@@ -56,9 +54,6 @@
 }
 .font-roboto{
     font-family: 'roboto' , sans-serif;
-}
-.ul_unorder{
-    list-style-type: symbols(U+2192);
 }
 .footer-color{
     background-color: #333333;
