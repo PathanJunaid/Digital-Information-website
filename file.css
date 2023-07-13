@@ -22,14 +22,8 @@
 .fw-400{
     font-weight: 500;
 }
-.w-95{
-    width: 95%;
-}
 .bg-color-contact{
     background-color: #292d33;
-}
-.bg-color-arrow{
-    background-color: #0c283d;
 }
 .rounded-1rem{
     border-radius: 1rem;
@@ -48,13 +42,39 @@
   'GRAD' 0,
   'opsz' 48
 }
-.position{
-    bottom: 5rem;
-    right: 3rem;
-}
 .font-roboto{
     font-family: 'roboto' , sans-serif;
 }
 .footer-color{
     background-color: #333333;
+}
+.line-h{
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    width: fit-content;
+}
+.z-index-5{
+    z-index: 5;
+}
+.Benefitlnk{
+    transition: ease !important;
+    transition-duration: 500ms !important;
+    padding-bottom: 2px !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 3px !important;
+    width: fit-content;
+    border-color: #6c757d;
+    font-weight: bold;    
+}
+.color-green{
+    color: #41e130 !important;
+}
+.color-blue{
+    color: #0d7bae !important;
+}
+
+.wh{
+    height: 56.922px;
+    z-index: -1;
 }
