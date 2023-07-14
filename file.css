@@ -8,11 +8,11 @@
 }
 .img-benefit{
     width: 100%;
-    min-height : 23rem !important;
+    min-height : 21rem !important;
     box-shadow: 15px -15px #6c757d;
 }
 .img-marketing{
-    min-height : 23rem !important;
+    min-height : 21rem !important;
     width: 100%;
     box-shadow: -15px 15px #6c757d;
 }
@@ -78,4 +78,18 @@
 .bg-color-shadow{
     /* background-color: #6c757d; */
     background-image: linear-gradient( #333333,#6c757d);
+}
+.fs-16px{
+    font-size: 22px;
+}
+.fs-24px{
+    font-size: 40px;
+}
+@media screen and (max-width: 400px) {
+    .fs-16px{
+        font-size: 16px !important;
+    }
+    .fs-24px{
+        font-size: 24px !important;
+    }
 }
