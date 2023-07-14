@@ -88,7 +88,7 @@
 .fs-20px{
     font-size: 34px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .fs-16px{
         font-size: 16px !important;
     }
@@ -96,6 +96,6 @@
         font-size: 24px !important;
     }
     .fs-20px{
-        font-size: 20px;
+        font-size: 22px !important;
     }
 }
