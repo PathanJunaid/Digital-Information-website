@@ -3,7 +3,7 @@ window.addEventListener("scroll", function (event) {
  
     scroll_y = this.scrollY;
     // Fixed Button to go on top 
-
+    // Will be visible after scroll 
     if(scroll_y>0){
         try{
             document.querySelector('.invisible').classList.add('visible');
@@ -17,17 +17,18 @@ window.addEventListener("scroll", function (event) {
         document.querySelector('.invisible').classList.remove('visible')   
     }
 })
+
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('.nav-link');
-  
+  // Nav link color change on reaching each section 
     function activateLink(link) {
       navLinks.forEach(function(navLink) {
         navLink.classList.remove('Benefitlnk');
       });
       link.classList.add('Benefitlnk');
     }
-  
+  // check which section is at the top 
     function checkSectionInView() {
       const scrollPosition = window.pageYOffset;
   
@@ -49,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add scroll event listener to the window
     window.addEventListener('scroll', checkSectionInView);
   });
+
+  // onclick event to collapse navbar on md and sm devices 
+
   async function navbar_closed(){
     let p = new Promise((resolve,reject)=>{
         var button = document.querySelector('.button-1')
