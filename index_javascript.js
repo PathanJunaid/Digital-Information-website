@@ -64,4 +64,3 @@ document.addEventListener('DOMContentLoaded', function() {
     let val= await p;
     console.log(val);
 }
-
