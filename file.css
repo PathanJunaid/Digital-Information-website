@@ -76,5 +76,6 @@
     height: 60px;
 }
 .bg-color-shadow{
-    background-color: #6c757d;
+    /* background-color: #6c757d; */
+    background-image: linear-gradient( #333333,#6c757d);
 }
