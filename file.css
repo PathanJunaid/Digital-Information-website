@@ -69,7 +69,7 @@
     bottom: 8%;
 }
 #line-height{
-    line-height: 3.2rem;
+    line-height: 4rem;
 }
 .top_link{
     width: 60px;
@@ -85,11 +85,17 @@
 .fs-24px{
     font-size: 40px;
 }
+.fs-20px{
+    font-size: 34px;
+}
 @media screen and (max-width: 400px) {
     .fs-16px{
         font-size: 16px !important;
     }
     .fs-24px{
         font-size: 24px !important;
+    }
+    .fs-20px{
+        font-size: 20px;
     }
 }
