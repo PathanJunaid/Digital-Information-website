@@ -25,8 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function activateLink(link) {
       navLinks.forEach(function(navLink) {
         navLink.classList.remove('Benefitlnk');
+        navLink.classList.remove('mb-2')
+        navLink.classList.remove('mb-lg-0')
       });
       link.classList.add('Benefitlnk');
+      link.classList.add('mb-2')
+      link.classList.add('mb-lg-0')
     }
   // check which section is at the top 
     function checkSectionInView() {
