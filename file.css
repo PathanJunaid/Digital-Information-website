@@ -6,6 +6,11 @@
     width: 100%;
     box-shadow: -15px 15px #6c757d;
 }
+.img-benefit{
+    max-height: 20rem;
+    width: 100%;
+    box-shadow: 15px -15px #6c757d;
+}
 .fw-600{
     font-weight: 600;
 }
