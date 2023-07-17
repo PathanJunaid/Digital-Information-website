@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const scrollPosition = window.pageYOffset;
   
       sections.forEach(function(section) {
-        const sectionTop = section.offsetTop-100; // Adjust the offset value as needed
+        const sectionTop = section.offsetTop-200; // Adjust the offset value as needed
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
   
