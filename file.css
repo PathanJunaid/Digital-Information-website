@@ -66,9 +66,12 @@
     height: 60px;
 }
 .top_link_container{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
 }
 .bg-color-shadow{
     background-image: linear-gradient( #333333,#6c757d);
+}
+.fs-48px{
+    font-size: 48px;
 }
